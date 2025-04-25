@@ -1,0 +1,22 @@
+{
+    "name": "collector-bank/magento2-paylink",
+    "license": "Apache-2.0",
+    "type": "magento2-module",
+    "description": "Magento 2 Collector Bank Checkout Module",
+    "require": {
+        "collector-bank/collector-checkout-magento2": "1.0.44",
+        "php": ">=7.4"
+    },
+    "authors": [
+        {
+            "name": "Walley",
+            "email": "help@walley.se"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
+
