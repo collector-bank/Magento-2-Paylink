@@ -8,7 +8,6 @@ use Magento\Quote\Model\QuoteManagement;
 use Magento\Store\Model\App\Emulation;
 use Magento\Store\Model\ScopeInterface;
 use Walley\PayLink\Model\DistributePayLink;
-use Walley\PayLink\Model\PaymentUriManager;
 use Webbhuset\CollectorCheckout\Adapter;
 
 class QuoteManagementPlugin
