@@ -16,7 +16,10 @@
     "autoload": {
         "files": [
             "registration.php"
-        ]
+        ],
+        "psr-4": {
+            "Walley\\PayLink\\": ""
+        }
     }
 }
 
