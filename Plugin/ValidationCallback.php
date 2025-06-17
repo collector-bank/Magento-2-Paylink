@@ -67,10 +67,15 @@ class ValidationCallback
         $this->updateShippingMethod($order, $checkoutData);
         $this->updateShippingAddress($order, $checkoutData);
         $this->createInvoice->execute($order);
-        $this->orderRepository->save($order);
+        $order = $this->orderRepository->save($order);
+        $orderId = $order->getIncrementId();
         $jsonResult->setHttpResponseCode(200)
-            ->setData(['message' => 'Validation callback approved']);
-
+            ->setData(
+                [
+                    'message' => 'Validation callback approved',
+                    'orderReference' => $orderId
+                ]
+            );
         return $jsonResult;
     }
 
